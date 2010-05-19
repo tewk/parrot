@@ -249,15 +249,9 @@ Parrot_io_open_unix(PARROT_INTERP, ARGMOD_NULLOK(PMC *filehandle),
     return PMCNULL;
 }
 
-#  if PARROT_ASYNC_DEVEL
-
 /*
 
 =item C<INTVAL Parrot_io_async_unix(PARROT_INTERP, PMC *filehandle, INTVAL b)>
-
-Experimental asynchronous IO.
-
-This is available if C<PARROT_ASYNC_DEVEL> is defined.
 
 Only works on Linux at the moment.
 
@@ -288,8 +282,6 @@ Parrot_io_async_unix(PARROT_INTERP, ARGMOD(PMC *filehandle), INTVAL b)
 #    endif
     return -1;
 }
-
-#  endif
 
 /*
 

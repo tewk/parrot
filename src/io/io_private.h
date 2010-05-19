@@ -26,7 +26,6 @@ Some ideas from AT&T SFIO.
 #define PARROT_IO_PRIVATE_H_GUARD
 
 #define PARROT_IN_IO 1
-#define PARROT_ASYNC_DEVEL 0
 #define PARROT_NET_DEVEL 1
 
 #include <parrot/io.h>

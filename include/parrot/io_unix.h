@@ -294,6 +294,9 @@ INTVAL Parrot_io_socket_unix(PARROT_INTERP,
 #define PIO_PEEK(interp, pmc, buf) Parrot_io_peek_unix((interp), (pmc), (buf))
 #define PIO_FLUSH(interp, pmc) Parrot_io_flush_unix((interp), (pmc))
 #define PIO_GETBLKSIZE(handle) Parrot_io_getblksize_unix((handle))
+#define PIO_SELECT(count, rds, wrs, ers, timeout) \
+  Parrot_io_select_unix((count), (rds), (wrs), (ers), (timeout))
+#define PIO_ASYNC(interp, handle) Parrot_io_async_unix((interp), (handle))
 
 #define PIO_POLL(interp, pmc, which, sec, usec) \
     Parrot_io_poll_unix((interp), (pmc), (which), (sec), (usec))

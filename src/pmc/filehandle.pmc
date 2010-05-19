@@ -279,6 +279,28 @@ filehandle, rather than modifying the invocant).
 
 /*
 
+=item C<METHOD setasync()>
+
+=cut
+
+*/
+    METHOD setasync() {
+        Parrot_io_async(INTERP, SELF, 1);
+    }
+
+/*
+
+=item C<METHOD setblocking()>
+
+=cut
+
+*/
+    METHOD setblocking() {
+        Parrot_io_async(INTERP, SELF, 0);
+    }
+
+/*
+
 =item C<METHOD isatty()>
 
 =cut
