@@ -1,0 +1,3 @@
+* Add tests and documentation
+* Abstract select and FD_ZERO,SET,CLR,ISSET calls into the PIO and src/io/api.c layer
+* either disable Select PMC during WIN32 compile or add windows support.
